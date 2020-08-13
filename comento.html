@@ -15,7 +15,7 @@
         <div class="header_hamburger">
             <button type="button">
                 <i class="fas fa-bars" aria-hidden="true"></i>
-                <span class="text_out">Menu</span>
+                <span class="hidden_text">Menu</span>
             </button>
         </div>
 
@@ -24,7 +24,8 @@
         </div>
         
         <div class="header_search">
-            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-search" aria-hidden="true"></i></a>
+            <span class="hidden_text">View Search</span>
         </div>
 
     </header>
@@ -44,130 +45,130 @@
 
     <!--banner-->
     <div id="banner">
-        <p>Know your <br><b>Product/Serial number?</br></p>
-        <div class="searchbox">
-            <div class="item1">Product <i class="fas fa-angle-down"></i></div>
-            <div class="item2">Enter your model number</div>
-            <div class="item3"><i class="fas fa-search"></i></div>            
-        </div>
+        <p>Know your <br><b>Product/Serial number?</b></br></p>
+        <form class="searchbox">
+            <div class="item1">Product <i class="fas fa-angle-down" aria-hidden="true"></i><span class="hidden_text">List</span></div>
+            <input class="item2" type="text" value="Enter your model number"></input>
+            <button class="item3"><i class="fas fa-search" aria-hidden="true"></i><span class="hidden_text">Search</span></button>            
+        </form>
     </div>
 
     <section>
     <!--PRODUCT CATEGORY-->
         <div id="article1">
             <div class="minicontainer">
-                <p class="title"><b>PRODUCT</b> CATEGORY</p>
+                <h2 class="title"><b>PRODUCT</b> CATEGORY</h2>
                 <p>Start your product knowledge discovery by selecting it's category</p>
             </div>
-            <div class="container">
-                <div class="item">
+            <ul class="container">
+                <li class="item">
                     <a href=""><img src="static/ranges.png" alt=""><br><span>RANGES</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/cooktops.png" alt=""><br><span>COOKTOPS</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/wall ovens.png" alt=""><br><span>WALL OVENS</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/ventilation.png" alt=""><br><span>VENTILATION</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/microwaves.png" alt=""><br><span>MICROWAVES</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/warming drawer.png" alt=""><br><span>WARMING DRAWER</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/outdoor.png" alt=""><br><span>OUTDOOR</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/refrigeration.png" alt=""><br><span>REFRIGERATION</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/wine&beverage.png" alt=""><br><span>WINE & BEVERAGE</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/dishwashers.png" alt=""><br><span>DISHWASHERS</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/accessories.png" alt=""><br><span>ACCESSORIES</span></a>
-                </div>
-                <div class="item">
+                </li>
+                <li class="item">
                     <a href=""><img src="static/coffee systems.png" alt=""><br><span>COFFEE SYSTEMS</span></a>
-                </div>
-            </div>    
+                </li>
+            </ul>    
         </div>
         
 
     <!--TOPICS-->
         <div id="article2">
             <div class="minicontainer">
-                <p class="title"><b>TOPICS</b></p>
+                <h2 class="title"><b>TOPICS</b></h2>
                 <p>You can access knowledge detail by knowledge content type</p>
             </div>
-            <div class="container">
-                <div class="item">
-                    <a href=""><img src="static/1.png" alt=""><br><span>ERROR CODES</span></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="static/2.png" alt=""><br><span>SERVICE GUIDE</span></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="static/3.png" alt=""><br><span>PARTS CATALOG</span></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="static/4.png" alt=""><br><span>SYMPTOMS</span></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="static/5.png" alt=""><br><span>PRODUCT INFO</span></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="static/6.png" alt=""><br><span>FAQ</span></a>
-                </div>
-            </div>
+            <ul class="container">
+                <li class="item">
+                    <a href=""><img src="static/icon1.png" alt=""><br><span>ERROR CODES</span></a>
+                </li>
+                <li class="item">
+                    <a href=""><img src="static/icon2.png" alt=""><br><span>SERVICE GUIDE</span></a>
+                </li>
+                <li class="item">
+                    <a href=""><img src="static/icon3.png" alt=""><br><span>PARTS CATALOG</span></a>
+                </li>
+                <li class="item">
+                    <a href=""><img src="static/icon4.png" alt=""><br><span>SYMPTOMS</span></a>
+                </li>
+                <li class="item">
+                    <a href=""><img src="static/icon5.png" alt=""><br><span>PRODUCT INFO</span></a>
+                </li>
+                <li class="item">
+                    <a href=""><img src="static/icon6.png" alt=""><br><span>FAQ</span></a>
+                </li>
+            </ul>
         </div>
 
     <!--Recent searched-->
         <div id="article3">
             
-            <p class="title">RECENT <b>SEARCHED</b></p>
+            <h2 class="title">RECENT <b>SEARCHED</b></h2>
             
 
             <div class="slide">
                 <ul>
                 <li class="item">
-                    <img src="static/7.png" alt="">
+                    <img src="static/img1.png" alt="">
                     <p>5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual Convection</p>
                     <a href="" class="button"><b>RF22N9781SG/AA</b></a>
                 </li>
 
                 <li class="item">
-                    <img src="static/8.png" alt="">
+                    <img src="static/img2.png" alt="">
                     <p>5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual Convection</p>
                     <a href="" class="button"><b>NX58M9960PS/AA</b></a>
                 </li>
                 
                 <li class="item">
-                    <img src="static/9.png" alt="">
+                    <img src="static/img3.png" alt="">
                     <p>30" Chef Collection Single Wall Oven with Flex Duo<sup>TM</sup></p>
                     <a href="" class="button"><b>NV51M9770SM/AA</b></a>
                 </li>
 
                 <li class="item">
-                    <img src="static/10.png" alt="">
+                    <img src="static/img4.png" alt="">
                     <p>29 cu. ft. Side-by-Side Food ShowCase Refrigerator with Metal Cooling</p>
                     <a href="" class="button"><b>RH29H9000SR/AA</b></a>
                 </li>
 
                 <li class="item">
-                    <img src="static/11.png" alt="">
+                    <img src="static/img5.png" alt="">
                     <p>DV9600 7 .5 cu. ft. FlexDry<sup>TM</sup> Gas Dryer</p>
                     <a href="" class="button"><b>DVG55M9600V/A3</b></a>
                 </li>
 
                 <li class="item">
-                    <img src="static/12.png" alt="">
+                    <img src="static/img6.png" alt="">
                     <p>WA7450 5.0 cu. ft. Top Load Washer</p>
                     <a href="" class="button"><b>WA50M7450AW/A4</b></a>
                 </li>
@@ -181,7 +182,7 @@
             
             <img src="static/call1.png" alt="" class="call1">
             <img src="static/call2.png" alt="" class="call2">
-            <p class="title">EXCEPTIONAL 24/7 <br><b>CUSTOMER CARE</br></p>
+            <h2 class="title">EXCEPTIONAL 24/7 <br><b>CUSTOMER CARE</br></h2>
             <p>Our dedicated support team is ready to take your call 24/7. We are committed to ensuring you have an exceptional customer experience.</p>
             <br>
             <a href="" class="button">CONTACT US</a>
@@ -195,39 +196,44 @@
         <div class="footer_top">
             <div class="footer_container">
                 <div class="footer_item">
-                    <p class="title"><b>PRODUCT SUPPORT</b></p><br>
-                    <a href="">Wall Ovens</a><br>
-                    <a href="">Ranges</a><br>
-                    <a href="">Cooktops</a><br>
-                    <a href="">Refrigeration</a><br>
-                    <a href="">Microwaves</a><br>
-                    <a href="">Dishwashers</a><br>
-                    <a href="">Ventilation</a><br>
-                    <a href="">Wine & Beverage</a><br>
-                    <a href="">Warming Drawers</a><br>
-                    <a href="">Outdoor</a><br>
-                    <a href="">Coffee System</a><br>
-                    <a href="">Accessories</a>
+                    <ul class="title"><b>PRODUCT SUPPORT</b><br><br>
+                        <li><a href="">Wall Ovens</a></li>
+                        <li><a href="">Ranges</a></li>
+                        <li><a href="">Cooktops</a></li>
+                        <li><a href="">Refrigeration</a></li>
+                        <li><a href="">Microwaves</a></li>
+                        <li><a href="">Dishwashers</a></li>
+                        <li><a href="">Ventilation</a></li>
+                        <li><a href="">Wine & Beverage</a></li>
+                        <li><a href="">Warming Drawers</a></li>
+                        <li><a href="">Outdoor</a></li>
+                        <li><a href="">Coffee System</a></li>
+                        <li><a href="">Accessories</a></li>
+                    </ul>    
                 </div>
 
                 <div class="footer_item">
-                    <p class="title"><b>TOPIC</b></p><br>
-                    <a href="">Error Codes</a><br>
-                    <a href="">Service Guide</a><br>
-                    <a href="">Parts Catalog</a><br>
-                    <a href="">Symptoms</a><br>
-                    <a href="">Product Info.</a><br>
-                    <a href="">FAQ</a>
+                    <ul class="title"><b>TOPIC</b><br><br>
+                        <li><a href="">Error Codes</a></li>
+                        <li><a href="">Service Guide</a></li>
+                        <li><a href="">Parts Catalog</a></li>
+                        <li><a href="">Symptoms</a></li>
+                        <li><a href="">Product Info.</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer_item">
-                    <p class="title"><b>TRAINING</b></p><br>
-                    <a href="">Technical Training</a><br>
-                    <a href="">Customer Service Training</a><br>
+                    <ul class="title"><b>TRAINING</b><br><br>
+                        <li><a href="">Technical Training</a></li>
+                        <li><a href="">Customer Service Training</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer_item">
-                    <a href="" class="title"><b>NEWSLETTER</b></a>
+                    <ul>
+                        <a href="" class="title"><b>NEWSLETTER</b></a>
+                    </ul>
                 </div>
             </div>    
         </div>
@@ -236,20 +242,23 @@
         <div class="footer_bottom">       
             <div class="footer_container">
                 <div class="footer_item">
-                    <input type="search" id="search" placeholder="Search">
-                    <a href=""><i class="fa fa-search"></i></a><br>
-                    
-                    <a href="">SITEMAP</a><br>
-                    <a href="">PRIVACY POLICY</a><br>
-                    <a href="">TERMS OF USE</a><br>
-                    <a href="">CONTACT US</a><br>
-                    <span>Follow Us</span> 
-                    <span class="sns">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-pinterest-p"></i></a>
-                    </span>
+                    <div class="search_box">
+                        <input type="search" id="search" placeholder="Search">
+                        <a href=""><i class="fa fa-search" aria-hidden="true"></i><span class="hidden_text">Search</span></a><br>
+                    </div>
+                    <ul>
+                        <li><a href="">SITEMAP</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">TERMS OF USE</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>    
+                        <span>Follow Us</span> 
+                        <span class="sns">
+                            <a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="hidden_text">Facebook</span></a>
+                            <a href=""><i class="fab fa-twitter" aria-hidden="true"></i><span class="hidden_text">Twitter</span></a>
+                            <a href=""><i class="fab fa-youtube" aria-hidden="true"></i><span class="hidden_text">Youtube</span></a>
+                            <a href=""><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="hidden_text">Pinterest</span></a>
+                        </span>
                 </div>
             </div>
         </div>        
