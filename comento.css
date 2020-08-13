@@ -20,6 +20,14 @@ li {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: normal;
+}
+
 #wrap {
   background-color: #2e2e2e;
 }
@@ -44,11 +52,13 @@ header button {
   border: none;
 }
 
-.text_out {
-  display: block;
+.hidden_text {
+  position: absolute;
   width: 0;
   height: 0;
   overflow: hidden;
+  line-height: 0;
+  font-size: 0;
 }
 
 /* navbar */
@@ -80,7 +90,7 @@ header button {
 
 #banner p {
   position: relative;
-  top: 10vh;
+  top: 50px;
   margin: 0;
   padding: 30px;
   text-align: center;
@@ -89,7 +99,7 @@ header button {
 
 #banner .searchbox {
   position: relative;
-  top: 10vh;
+  top: 50px;
   width: 720px;
   height: 70px;
   border: 1px solid;
@@ -110,11 +120,24 @@ header button {
 #banner .searchbox .item2 {
   padding: 20px;
   flex-grow: 2;
-  font-weight: lighter;
+}
+
+#banner input {
+  background-color: inherit;
+  margin: 0;
+  border: 0;
+  color: white;
 }
 
 #banner .searchbox .item3 {
   padding: 20px;
+}
+
+#banner button {
+  background-color: inherit;
+  margin: 0;
+  border: 0;
+  color: white;
 }
 
 /* section */
@@ -184,7 +207,7 @@ section {
 /* article 3 */
 
 #article3 .slide .item {
-  width: 100%;
+  width: 50%;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -218,64 +241,6 @@ section {
   border-color: white;
   background-color: #585858;
   padding: 10px 20px;
-}
-
-/* article 3 slide */
-
-#article3 .slide {
-  overflow: hidden;
-}
-
-#article3 .slide ul {
-  width: 600%;
-  display: flex;
-  animation: slide 20s infinite;
-}
-
-#article3 .slide li {
-  width: 16.7%;
-}
-
-@keyframes slide {
-  0% {
-    margin-left: 0;
-  }
-  8% {
-    margin-left: 0;
-  }
-  16% {
-    margin-left: -100%;
-  }
-  24% {
-    margin-left: -100%;
-  }
-  32% {
-    margin-left: -200%;
-  }
-  40% {
-    margin-left: -200%;
-  }
-  48% {
-    margin-left: -300%;
-  }
-  56% {
-    margin-left: -300%;
-  }
-  64% {
-    margin-left: -400%;
-  }
-  72% {
-    margin-left: -400%;
-  }
-  80% {
-    margin-left: -500%;
-  }
-  90% {
-    margin-left: -500%;
-  }
-  100% {
-    margin-left: 0;
-  }
 }
 
 /* article 4 */
@@ -339,14 +304,21 @@ section {
 
 .footer_bottom .footer_item {
   padding: 20px 0;
-  margin-left: 20px;
+  margin: 0 20px;
+}
+
+.footer_bottom .footer_item .search_box {
+  width: 250px;
+  border: 1px solid white;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 10px;
+  background-color: #000000;
 }
 
 .footer_bottom .footer_item input {
-  border: 1px solid white;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #000000;
+  width: 210px;
+  background-color: inherit;
+  border: none;
 }
 
 .footer_bottom .footer_item span {
@@ -355,7 +327,7 @@ section {
   font-weight: lighter;
 }
 
-/* media query */
+/* media query mobile*/
 
 @media (max-width: 812px) {
   /* header */
@@ -452,8 +424,62 @@ section {
     width: 100%;
   }
 
-  #article3 .slide .item {
-    width: 50%;
+  /* article 3 slide */
+
+  #article3 .slide {
+    overflow: hidden;
+  }
+
+  #article3 .slide ul {
+    width: 600%;
+    display: flex;
+    animation: slide 20s infinite;
+  }
+
+  #article3 .slide li {
+    width: 16.7%;
+  }
+
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+    8% {
+      margin-left: 0;
+    }
+    16% {
+      margin-left: -100%;
+    }
+    24% {
+      margin-left: -100%;
+    }
+    32% {
+      margin-left: -200%;
+    }
+    40% {
+      margin-left: -200%;
+    }
+    48% {
+      margin-left: -300%;
+    }
+    56% {
+      margin-left: -300%;
+    }
+    64% {
+      margin-left: -400%;
+    }
+    72% {
+      margin-left: -400%;
+    }
+    80% {
+      margin-left: -500%;
+    }
+    90% {
+      margin-left: -500%;
+    }
+    100% {
+      margin-left: 0;
+    }
   }
 
   /* article 4 */
@@ -467,7 +493,32 @@ section {
   }
 
   /* footer_bottom */
+
+  .footer_bottom .footer_item .search_box {
+    width: 100%;
+  }
+
   .footer_bottom .footer_item input {
-    width: 80%;
+    width: 90%;
+  }
+}
+
+/* media query pc */
+@media (min-width: 813px) and (max-width: 1440px) {
+  #article3 .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #article3 .slide .item {
+    width: 30%;
+    height: 400px;
+  }
+
+  .footer_top .footer_container {
+    display: flex;
+    justify-content: space-between;
   }
 }
