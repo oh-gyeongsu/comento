@@ -28,8 +28,38 @@ h2 {
   font-weight: normal;
 }
 
+hr {
+  border-color: #8c8c8c;
+}
+
 #wrap {
   background-color: #2e2e2e;
+}
+
+/* header_top */
+
+.header_top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_top i {
+  margin: 10px 10px 0px 0px;
+  font-size: 2rem;
+}
+
+.header_top p {
+  margin: 10px;
+}
+
+.header_top .button {
+  color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: white;
+  background-color: #2e2e2e;
+  padding: 0px 10px;
+  margin: 5px 10px;
 }
 
 /* header */
@@ -39,7 +69,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #1c1c1c;
-  padding: 0 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 header i {
@@ -72,10 +102,6 @@ header button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.navbar_menu li {
-  padding: 10px;
 }
 
 /* banner */
@@ -174,7 +200,7 @@ section {
   width: 360px;
   height: 330px;
   border: 1px solid;
-  border-color: white;
+  border-color: #8c8c8c;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
@@ -196,7 +222,7 @@ section {
   width: 360px;
   height: 330px;
   border: 1px solid;
-  border-color: white;
+  border-color: #8c8c8c;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
@@ -213,9 +239,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #585858;
+  background-color: #4c4c4c;
   margin: 0 50px 50px 50px;
-  padding: 30px;
+  padding: 25px;
 }
 
 #article3 p {
@@ -223,30 +249,30 @@ section {
 }
 
 #article3 .slide p {
-  margin-bottom: 30px;
-  background-color: #585858;
+  margin-bottom: 20px;
+  background-color: #4c4c4c;
 }
 
 #article3 .slide b {
-  background-color: #585858;
+  background-color: #4c4c4c;
 }
 
 #article3 .slide sup {
-  background-color: #585858;
+  background-color: #4c4c4c;
 }
 
 #article3 .button {
   border: 1px solid;
   border-radius: 30px;
   border-color: white;
-  background-color: #585858;
+  background-color: #4c4c4c;
   padding: 10px 20px;
 }
 
 /* article 4 */
 
 #article4 {
-  margin: 50px 10px;
+  margin: 50px 0px;
 }
 
 #article4 .call1 {
@@ -330,7 +356,18 @@ section {
 /* media query mobile*/
 
 @media (max-width: 812px) {
+  hr {
+    display: none;
+  }
+
+  /* header_top */
+
+  .header_top {
+    display: none;
+  }
+
   /* header */
+
   header {
     display: flex;
     justify-content: space-between;
@@ -345,13 +382,16 @@ section {
   }
 
   /* navbar */
+
   .navbar_menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    display: none;
   }
 
   /* banner */
+
   #banner p {
     font-size: 3.6rem;
     position: relative;
@@ -387,6 +427,7 @@ section {
   }
 
   /* article 1 */
+
   #article1 .container {
     width: 100%;
   }
@@ -405,6 +446,7 @@ section {
   }
 
   /* article 2 */
+
   #article2 .container {
     width: 100%;
   }
@@ -420,6 +462,7 @@ section {
   }
 
   /* article 3 */
+
   #article3 .slide {
     width: 100%;
   }
@@ -430,13 +473,13 @@ section {
     overflow: hidden;
   }
 
-  #article3 .slide ul {
+  #article3 .slide {
     width: 600%;
     display: flex;
     animation: slide 20s infinite;
   }
 
-  #article3 .slide li {
+  #article3 .slide .item {
     width: 16.7%;
   }
 
@@ -483,6 +526,11 @@ section {
   }
 
   /* article 4 */
+
+  #article4 hr {
+    display: block;
+  }
+
   #article4 .call1 {
     display: none;
   }
@@ -504,18 +552,56 @@ section {
 }
 
 /* media query pc */
-@media (min-width: 813px) and (max-width: 1440px) {
+
+@media (min-width: 813px) {
+  /* header */
+
+  .header_hamburger {
+    display: none;
+  }
+
+  /* article 1 */
+
+  #article1 .container .item {
+    border-color: #8c8c8c;
+    background-color: #4c4c4c;
+  }
+
+  /* article 2 */
+
+  #article2 .container {
+    width: 100%;
+  }
+
+  #article2 .container .item {
+    width: 16.4%;
+    height: 40vh;
+    border-color: #2e2e2e;
+  }
+
+  #article2 hr {
+    width: 0px;
+    height: 50px;
+    border-color: #8c8c8c;
+    border-style: solid;
+  }
+
+  /* article 3 */
+
   #article3 .slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
   }
 
   #article3 .slide .item {
     width: 30%;
-    height: 400px;
+    margin: 0 50px 50px 50px;
   }
+
+  /* footer_top */
 
   .footer_top .footer_container {
     display: flex;
